@@ -22,8 +22,12 @@ public class logIn extends AppCompatActivity {
         btnLogInIn = findViewById(R.id.btnLogInIn);
         floatBtn = findViewById(R.id.floatBtn);
 
+
 //hej tjena hallå
 
+
         int x = 15;
+        int y = 10;
+
     }
 }
