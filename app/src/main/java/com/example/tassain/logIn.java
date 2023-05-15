@@ -25,6 +25,9 @@ public class logIn extends AppCompatActivity {
 
 //hej tjena hallå
 
-        int x = 10;
+
+        int x = 15;
+        int y = 10;
+
     }
 }
