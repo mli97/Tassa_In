@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "792408869134",
+    "project_id": "tassa-in-e8132",
+    "storage_bucket": "tassa-in-e8132.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792408869134:android:45b171dfdea4278f8daf5f",
+        "android_client_info": {
+          "package_name": "com.example.tassain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792408869134-lcojtdqmokplm6h83sej318raee0bsdt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tassain",
+            "certificate_hash": "d9db8f6ffcf42d469b29bd39db7086a2dca5e238"
+          }
+        },
+        {
+          "client_id": "792408869134-gu9bmd8642p98463gke7tgmglq5oohnu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtNUgvGXXEIARF_vXC_xqFAzcvFaCrvuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792408869134-gu9bmd8642p98463gke7tgmglq5oohnu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
