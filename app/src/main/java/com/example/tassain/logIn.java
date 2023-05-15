@@ -22,7 +22,7 @@ public class logIn extends AppCompatActivity {
         btnLogInIn = findViewById(R.id.btnLogInIn);
         floatBtn = findViewById(R.id.floatBtn);
 
-//hej tjena
+//hej tjena hallå
 
     }
 }
