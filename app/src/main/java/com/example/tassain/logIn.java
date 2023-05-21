@@ -9,7 +9,7 @@ import android.widget.EditText;
 public class logIn extends AppCompatActivity {
 
     EditText editMail, editPassword;
-    Button btnLogInIn, floatBtn;
+    Button btnLogInIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,9 +20,8 @@ public class logIn extends AppCompatActivity {
         editPassword = findViewById(R.id.editPassword);
 
         btnLogInIn = findViewById(R.id.btnLogInIn);
-        floatBtn = findViewById(R.id.floatBtn);
 
-//hej tjena hallå
+
 
     }
 }
