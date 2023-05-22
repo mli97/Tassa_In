@@ -15,6 +15,9 @@
         android:theme="@style/Theme.TassaIn"
         tools:targetApi="31">
         <activity
+            android:name=".huvudSida"
+            android:exported="false" />
+        <activity
             android:name=".MinaSidor"
             android:exported="false" />
         <activity

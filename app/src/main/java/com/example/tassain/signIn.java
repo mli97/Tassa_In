@@ -68,8 +68,6 @@ public class signIn extends AppCompatActivity {
 
 
                                 } else {
-                                    mAuth.getCurrentUser().getUid();
-
                                     Toast.makeText(signIn.this, "Registrering misslyckades.",
                                             Toast.LENGTH_SHORT).show();
 
