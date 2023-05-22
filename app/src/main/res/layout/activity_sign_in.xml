@@ -55,6 +55,18 @@
     </com.google.android.material.textfield.TextInputLayout>
 
 
+    <ProgressBar
+        android:id="@+id/progressSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="181dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_marginEnd="182dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignInIn" />
+
     <Button
         android:id="@+id/btnSignInIn"
         android:layout_width="wrap_content"
@@ -63,7 +75,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="160dp"
         android:backgroundTint="@color/pastel_blue"
-        android:text="@string/log_in"
+        android:text="@string/sign_up"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
