@@ -64,11 +64,16 @@ public class logIn extends AppCompatActivity {
                                     Toast.makeText(logIn.this, "inoggningen misslyckades",
                                             Toast.LENGTH_SHORT).show();
 
+
                                 }
                             }
                         });
             }
         });
+
+
+
+     
 
     }
 }
