@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -22,6 +23,7 @@ import com.google.firebase.ktx.Firebase;
 public class signIn extends AppCompatActivity {
 
     TextInputEditText editTextEmail, editTextPassword;
+    EditText editDogName, editDogAge, editDogBreed, editOwnerName, editAddress, editNumber;
     Button btnSignUp;
     FirebaseAuth mAuth;
     ProgressBar progressBar;
@@ -36,14 +38,28 @@ public class signIn extends AppCompatActivity {
         editTextEmail = findViewById(R.id.emailSignIn);
         editTextPassword = findViewById(R.id.passwordSignIn);
         btnSignUp = findViewById(R.id.btnSignInIn);
+        editDogName = findViewById(R.id.dog_name);
+        editDogAge = findViewById(R.id.dog_age);
+        editDogBreed = findViewById(R.id.dog_breed);
+        editOwnerName = findViewById(R.id.owner_name);
+        editAddress = findViewById(R.id.owner_address);
+        editNumber = findViewById(R.id.owner_number);
 
         btnSignUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 progressBar.setVisibility(View.VISIBLE);
-                String email, password;
+
+                String email, password, dogName, age, breed, ownerName, address, number;
                 email = editTextEmail.getText().toString();
                 password = editTextPassword.getText().toString();
+                dogName = editDogName.getText().toString();
+                age = editDogAge.getText().toString();
+                breed = editDogBreed.getText().toString();
+                ownerName = editOwnerName.getText().toString();
+                address = editAddress.getText().toString();
+                number = editNumber.getText().toString();
 
                 if (TextUtils.isEmpty(email)){
                     Toast.makeText(signIn.this,"skriv in din mail", Toast.LENGTH_SHORT).show();
@@ -54,6 +70,38 @@ public class signIn extends AppCompatActivity {
                     Toast.makeText(signIn.this,"skriv in ditt lösenord", Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+                if (TextUtils.isEmpty(dogName)){
+                    Toast.makeText(signIn.this,"skriv in dn hunds namn", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(age)){
+                    Toast.makeText(signIn.this,"skriv in din hunds ålder", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(breed)){
+                    Toast.makeText(signIn.this,"skriv in din hunds ras", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(ownerName)){
+                    Toast.makeText(signIn.this,"skriv in ditt namn", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(address)){
+                    Toast.makeText(signIn.this,"skriv in din adress", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                if (TextUtils.isEmpty(number)){
+                    Toast.makeText(signIn.this,"skriv in ditt nummer", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+
 
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {

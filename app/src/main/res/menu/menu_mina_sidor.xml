@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/loggaUt" android:title="Logga ut"></item>
+    <item android:id="@+id/huvudSida" android:title="Flödet"></item>
+</menu>
