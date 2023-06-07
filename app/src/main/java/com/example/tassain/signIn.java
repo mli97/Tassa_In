@@ -119,6 +119,7 @@ public class signIn extends AppCompatActivity {
                                     Toast.makeText(signIn.this, "Registrering misslyckades.",
                                             Toast.LENGTH_SHORT).show();
 
+
                                 }
                             }
                         });
